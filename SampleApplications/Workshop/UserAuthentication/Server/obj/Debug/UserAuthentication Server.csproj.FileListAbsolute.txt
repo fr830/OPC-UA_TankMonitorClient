@@ -1,0 +1,13 @@
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Quickstarts.UserAuthenticationServer.Config.xml
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\App.ico
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Quickstarts.UserAuthenticationServer.exe.config
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Quickstarts.UserAuthenticationServer.exe
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Quickstarts.UserAuthenticationServer.pdb
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Server\obj\Debug\UserAuthentication Server.csprojAssemblyReference.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Server\obj\Debug\Quickstarts.UserAuthenticationServer.exe.config
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Server\obj\Debug\Quickstarts.UserAuthenticationServer.Properties.Resources.resources
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Server\obj\Debug\UserAuthentication Server.csproj.GenerateResource.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Server\obj\Debug\UserAuthentication Server.csproj.CoreCompileInputs.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Server\obj\Debug\UserAuthentication Server.csproj.CopyComplete
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Server\obj\Debug\Quickstarts.UserAuthenticationServer.exe
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Server\obj\Debug\Quickstarts.UserAuthenticationServer.pdb

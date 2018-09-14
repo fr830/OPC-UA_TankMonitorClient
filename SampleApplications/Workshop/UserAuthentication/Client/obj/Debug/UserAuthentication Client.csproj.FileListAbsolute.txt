@@ -1,0 +1,15 @@
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\TestData.xml
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Quickstarts.UserAuthenticationClient.Config.xml
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\App.ico
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Quickstarts.UserAuthenticationClient.exe.config
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Quickstarts.UserAuthenticationClient.exe
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Quickstarts.UserAuthenticationClient.pdb
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\UserAuthentication Client.csprojAssemblyReference.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\Quickstarts.UserAuthenticationClient.exe.config
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\Quickstarts.UserAuthenticationClient.MainForm.resources
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\Quickstarts.UserAuthenticationClient.Properties.Resources.resources
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\UserAuthentication Client.csproj.GenerateResource.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\UserAuthentication Client.csproj.CoreCompileInputs.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\UserAuthentication Client.csproj.CopyComplete
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\Quickstarts.UserAuthenticationClient.exe
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\UserAuthentication\Client\obj\Debug\Quickstarts.UserAuthenticationClient.pdb

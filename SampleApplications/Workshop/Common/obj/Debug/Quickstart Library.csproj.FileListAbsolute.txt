@@ -1,0 +1,9 @@
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Opc.Ua.QuickstartsLibrary.dll
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\bin\Debug\Opc.Ua.QuickstartsLibrary.pdb
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\Common\obj\Debug\Quickstart Library.csprojAssemblyReference.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\Common\obj\Debug\Quickstarts.SelectLocaleDlg.resources
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\Common\obj\Debug\Quickstart Library.csproj.GenerateResource.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\Common\obj\Debug\Quickstart Library.csproj.CoreCompileInputs.cache
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\Common\obj\Debug\Quickstart Library.csproj.CopyComplete
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\Common\obj\Debug\Opc.Ua.QuickstartsLibrary.dll
+C:\Users\iracc\Documents\projects\UA-.NETStandard\SampleApplications\Workshop\Common\obj\Debug\Opc.Ua.QuickstartsLibrary.pdb

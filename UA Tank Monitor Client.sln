@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{BB5CFCEC-1D87-4434-8DEC-0403FF71BE16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPC_Client", "SampleApplications\Workshop\Reference\Client\OPC_Client.csproj", "{9C1E7F15-2EE3-440D-8E17-00C38073822A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoringService", "MonitoringService\MonitoringService.csproj", "{816289A5-4388-4745-A724-03F4F2F3FF91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C1E7F15-2EE3-440D-8E17-00C38073822A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C1E7F15-2EE3-440D-8E17-00C38073822A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C1E7F15-2EE3-440D-8E17-00C38073822A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C1E7F15-2EE3-440D-8E17-00C38073822A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816289A5-4388-4745-A724-03F4F2F3FF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816289A5-4388-4745-A724-03F4F2F3FF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816289A5-4388-4745-A724-03F4F2F3FF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816289A5-4388-4745-A724-03F4F2F3FF91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C1E7F15-2EE3-440D-8E17-00C38073822A} = {BB5CFCEC-1D87-4434-8DEC-0403FF71BE16}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FB5EF9F-9A65-428F-8817-13DF5E39423B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\Users\iracc\Documents\projects\OPC-UA_TankMonitorClient\MonitoringService\bin\Debug\MonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\iracc\Documents\projects\OPC-UA_TankMonitorClient\MonitoringService\bin\Debug\MonitoringService.InstallLog
+   assemblypath = C:\Users\iracc\Documents\projects\OPC-UA_TankMonitorClient\MonitoringService\bin\Debug\MonitoringService.exe
+Installing service OPCServiceClient...
+Service OPCServiceClient has been successfully installed.
+Creating EventLog source OPCServiceClient in log Application...
+Committing assembly 'C:\Users\iracc\Documents\projects\OPC-UA_TankMonitorClient\MonitoringService\bin\Debug\MonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\iracc\Documents\projects\OPC-UA_TankMonitorClient\MonitoringService\bin\Debug\MonitoringService.InstallLog
+   assemblypath = C:\Users\iracc\Documents\projects\OPC-UA_TankMonitorClient\MonitoringService\bin\Debug\MonitoringService.exe
