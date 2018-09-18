@@ -1,0 +1,2 @@
+Service is started at 9/18/2018 5:00:25 PM
+Monitoring Service is stopped at 9/18/2018 5:00:38 PM

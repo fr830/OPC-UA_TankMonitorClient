@@ -17,68 +17,94 @@ namespace MonitoringService
 {
     public partial class MonitoringService : ServiceBase
     {
-        Timer timer = new Timer();
         OPCClient opcClient;
-        ApplicationInstance application = new ApplicationInstance();
-        string serverUrl = TankDataTypes.serverUrl;
+        ApplicationInstance application;
+        string serverUrl;
+
+        int isFisrtTime=0;
+        System.Timers.Timer timer = new System.Timers.Timer();
+        
 
         public MonitoringService()
         {
             InitializeComponent();
 
-            // create and init OPC Client
+            application = new ApplicationInstance();
             application.ApplicationType = ApplicationType.Client;
             application.ConfigSectionName = "Quickstarts.ReferenceClient";
 
-            // load the application configuration.
-            application.LoadApplicationConfiguration(false).Wait();
-            // check the application certificate.
-             //application.CheckApplicationInstanceCertificate(false, 0).Wait();
+            //// load the application configuration.
+            string configPath = AppDomain.CurrentDomain.BaseDirectory + @"\Quickstarts.ReferenceClient.Config.xml";
+            application.LoadApplicationConfiguration(configPath, true);
+
+            //// check the application certificate.
+            application.CheckApplicationInstanceCertificate(false, 0);
+
+            // set OPC server endpoint
+            serverUrl = TankDataTypes.serverUrl;
+
             opcClient = new OPCClient(application.ApplicationConfiguration, serverUrl);
         }
 
         internal void TestStartupAndStop(string[] args)
         {
             this.OnStart(args);
+
             Console.ReadLine();
-            this.OnStop();
+            //this.OnStop();
         }
 
         protected override void OnStart(string[] args)
         {
+
             using (EventLog eventLog = new EventLog("Application"))
             {
                 eventLog.Source = "OPC_Service";
                 eventLog.WriteEntry("Iniciado serviço", EventLogEntryType.Information, 101, 1);
             }
 
+            //run the opc client
+            opcClient.Run();
+
             WriteToFile("Service is started at " + DateTime.Now);
-            timer.Elapsed += new ElapsedEventHandler(OnElapsedTime);
-            timer.Interval = 5000; //number in milisecinds  
-            timer.Enabled = true;
 
-            try
-            {
-                // run the opc client
-                // opcClient.run();
-
-                WriteToFile("OPC Client is started at " + DateTime.Now);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(application.ApplicationName, e);
-                return;
-            }
+            //timer.Elapsed += new ElapsedEventHandler(OnElapsedTime);
+            //timer.Interval = 15000; //number in milisecinds  
+            //timer.Enabled = true;
         }
+
+        //private void OnElapsedTime(object source, ElapsedEventArgs e)
+        //{
+        //    WriteToFile("Monitoring Service  - OnElapsedTime ! " + DateTime.Now);
+        //    if (isFisrtTime == -1)
+        //    {
+        //        timer.Interval = 1555000;
+        //        try
+        //        {
+
+
+
+        //            WriteToFile("OPC Client is started at " + DateTime.Now);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            WriteToFile(application.ApplicationName + ex);
+        //            return;
+        //        }
+
+        //        string sExecutablePath = "C:\\Project\\Cliente_sem WinService\\SampleApplications\\bin\\Debug\\Quickstarts.ReferenceClient.exe";
+        //        myProcess = System.Diagnostics.Process.Start(sExecutablePath);
+        //        isFisrtTime = +1;
+        //        myProcess.WaitForExit();
+        //    }
+        //}
 
         protected override void OnStop()
         {
+            opcClient.Stop();
             WriteToFile("Monitoring Service is stopped at " + DateTime.Now);
         }
-        private void OnElapsedTime(object source, ElapsedEventArgs e)
-        {
-            WriteToFile("Monitoring Service is recall at " + DateTime.Now);
-        }
+
         public void WriteToFile(string Message)
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";

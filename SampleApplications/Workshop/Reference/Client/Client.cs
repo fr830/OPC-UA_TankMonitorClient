@@ -4,6 +4,7 @@ using Opc.Ua.Client.Controls;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace Quickstarts.ReferenceClient
             ConnectCTRL = new ConnectCtrl(configuration, serverUrl);
         }
 
-        public void run()
+        public void Run()
         {
             this.Server_ConnectMI_Click();
             this.Server_ConnectComplete();
@@ -59,15 +60,19 @@ namespace Quickstarts.ReferenceClient
             try
             {
                 m_session = ConnectCTRL.Session;
+                if(m_session == null)
+                {
+                    throw new Exception("m_session is null");
+                }
 
                 // set a suitable initial state.
                 if (m_session != null && !m_connectedOnce)
                 {
                     m_connectedOnce = true;
-                }
+                } 
 
                 GetTanks();
-                addSubscription();
+                AddSubscription();
             }
             catch (Exception exception)
             {
@@ -76,6 +81,25 @@ namespace Quickstarts.ReferenceClient
         }
         #endregion
 
+        /// <summary>
+        /// Disconnects from the current session.
+        /// </summary>
+        public void Stop()
+        {
+            try
+            {
+                m_subscription.Delete(true);
+                m_subscription.Dispose();
+                m_subscription = null;
+                ConnectCTRL.Disconnect();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+            }
+        }
+
+        // Get all nodes excluding Server Node in the references Collection
         private void GetTanks()
         {
             BrowseDescription nodeToBrowse = new BrowseDescription();
@@ -103,7 +127,7 @@ namespace Quickstarts.ReferenceClient
             }
         }
 
-        private void addSubscription()
+        private void AddSubscription()
         {
             try
             {
@@ -193,6 +217,7 @@ namespace Quickstarts.ReferenceClient
                 }
 
                 Console.WriteLine(monitoredItem.DisplayName + ": " + notification.Value.WrappedValue.ToString());
+                WriteToFile(monitoredItem.DisplayName + ": " + notification.Value.WrappedValue.ToString());
                 //using (EventLog eventLog = new EventLog("Monitored Item"))
                 //{
                 //    eventLog.Source = "OPC_Service Monitored Item";
@@ -202,6 +227,31 @@ namespace Quickstarts.ReferenceClient
             catch (Exception exception)
             {
                 Console.WriteLine(exception);
+            }
+        }
+
+        public void WriteToFile(string Message)
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\Tags_" + DateTime.Now.Date.ToShortDateString().Replace('/', '_') + ".txt";
+            if (!File.Exists(filepath))
+            {
+                // Create a file to write to.   
+                using (StreamWriter sw = File.CreateText(filepath))
+                {
+                    sw.WriteLine(Message);
+                }
+            }
+            else
+            {
+                using (StreamWriter sw = File.AppendText(filepath))
+                {
+                    sw.WriteLine(Message);
+                }
             }
         }
     }

@@ -14,6 +14,9 @@ namespace MonitoringService
         /// </summary>
         static void Main()
         {
+            //MonitoringService ms = new MonitoringService();
+            //ms.TestStartupAndStop(null);
+
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {

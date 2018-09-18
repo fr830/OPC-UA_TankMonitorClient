@@ -68,7 +68,7 @@ namespace Quickstarts.ReferenceClient
                 string serverUrl = "opc.tcp://localhost:62541/Quickstarts/ReferenceServer";
 
                 OPCClient client = new OPCClient(application.ApplicationConfiguration, serverUrl);
-                client.run();
+                client.Run();
 
                 while (true) ;
             }

@@ -9,7 +9,7 @@ namespace Quickstarts.ReferenceClient
     public static class TankDataTypes
     {
         public const string serverUrl = "opc.tcp://localhost:62541/Quickstarts/ReferenceServer";
-        //public const string serverUrl = "opc.tcp://DESKTOP-S2P1EKC:53530/OPCUA/SimulationServer";
+        //public const string serverUrl = "opc.tcp://localhost:53530/OPCUA/SimulationServer";
 
         public const string tanks = "Simulation";
         public static readonly string[] props = {
@@ -23,7 +23,7 @@ namespace Quickstarts.ReferenceClient
             "Nível%",
             "Temperatura"
         };
-
+        
         public static bool containsProp(string prop)
         {
             for (int i = 0; i < props.Length; i++)

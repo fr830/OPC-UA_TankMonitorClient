@@ -96,6 +96,7 @@ namespace Opc.Ua.Client.Controls
                 throw new ArgumentNullException("m_configuration");
             }
 
+            // TODO 
             bool useSecurity = false;
 
             // select the best endpoint.
@@ -123,7 +124,32 @@ namespace Opc.Ua.Client.Controls
             // return the new session.
             return m_session;
         }
-        
+
+        /// <summary>
+        /// Disconnects from the server.
+        /// </summary>
+        public void Disconnect()
+        {
+            //UpdateStatus(false, DateTime.UtcNow, "Disconnected");
+
+            // stop any reconnect operation.
+            if (m_reconnectHandler != null)
+            {
+                m_reconnectHandler.Dispose();
+                m_reconnectHandler = null;
+            }
+
+            // disconnect any existing session.
+            if (m_session != null)
+            {
+                m_session.Close(10000);
+                m_session = null;
+            }
+
+            // raise an event.
+            DoConnectComplete(null);
+        }
+
         #region Private Methods
         /// <summary>
         /// Handles a keep alive event from a session.

@@ -1,0 +1,11 @@
+/Simulation/Grupo: 2
+/Simulation/Nome: Tank1
+/Simulation/MatériaPrima: 6
+/Simulation/Capacidade: 100
+/Simulation/VolumeMorto: 12
+/Simulation/Status: Ready
+/Simulation/Nível: 85
+/Simulation/Nível%: 72
+/Simulation/Temperatura: 13
+/Simulation/Nível: 30
+/Simulation/Temperatura: 18

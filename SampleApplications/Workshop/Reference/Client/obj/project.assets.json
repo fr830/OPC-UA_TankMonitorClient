@@ -16,11 +16,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iracc\\Documents\\projects\\OPC-UA_TankMonitorClient\\SampleApplications\\Workshop\\Reference\\Client\\OPC_Client.csproj",
+      "projectUniqueName": "C:\\Users\\iracc\\Documents\\projects\\OPCTankMonitoringClient_WS\\SampleApplications\\Workshop\\Reference\\Client\\OPC_Client.csproj",
       "projectName": "OPC_Client",
-      "projectPath": "C:\\Users\\iracc\\Documents\\projects\\OPC-UA_TankMonitorClient\\SampleApplications\\Workshop\\Reference\\Client\\OPC_Client.csproj",
+      "projectPath": "C:\\Users\\iracc\\Documents\\projects\\OPCTankMonitoringClient_WS\\SampleApplications\\Workshop\\Reference\\Client\\OPC_Client.csproj",
       "packagesPath": "C:\\Users\\iracc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iracc\\Documents\\projects\\OPC-UA_TankMonitorClient\\SampleApplications\\Workshop\\Reference\\Client\\obj\\",
+      "outputPath": "C:\\Users\\iracc\\Documents\\projects\\OPCTankMonitoringClient_WS\\SampleApplications\\Workshop\\Reference\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
